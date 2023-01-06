@@ -1,1 +1,1 @@
-This is the standard connectors I use on many (audio) connections for data mode operations.
+This is the standard for connectors I use on many (audio) connections for data mode operations.
