@@ -9,7 +9,7 @@
     (property "Footprint" "" (id 2) (at 7.62 3.81 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "(TBD)" (id 3) (at 7.62 -7.62 0)
+    (property "Datasheet" "https://cdn-reichelt.de/documents/datenblatt/C160/M604.pdf" (id 3) (at 7.62 -7.62 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "ki_keywords" "circular DIN connector" (id 4) (at 0 0 0)
