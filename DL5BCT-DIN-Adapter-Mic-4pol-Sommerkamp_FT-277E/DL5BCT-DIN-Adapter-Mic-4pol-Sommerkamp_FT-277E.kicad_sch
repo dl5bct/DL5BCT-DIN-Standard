@@ -5,11 +5,11 @@
   (paper "A5" portrait)
 
   (title_block
-    (title "Adapter DL5BCT-DIN-Standard <--> TRX MIC 4-pol")
+    (title "Adaptor DL5BCT-DIN-Standard <--> TRX MIC 4-pol")
     (date "2023-01-07")
     (rev "1.0")
     (company "Peter Cornelius DL5BCT / peter cornelius consulting")
-    (comment 1 "Adapter from/to DL5BCT DIN Standard to 4-pol TRX mike connector")
+    (comment 1 "Adaptor from/to DL5BCT DIN Standard to 4-pol TRX mike connector")
     (comment 2 "Sommerkamp FT-277 E")
   )
 
