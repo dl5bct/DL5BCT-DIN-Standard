@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/usr/home/pcc/src/Hardware/DL5BCT-DIN-Standard/DL5BCT-DIN-Adapter-Mic-4pol-Sommerkamp_FT-277E/DL5BCT-DIN-Adapter-Mic-4pol-Sommerkamp_FT-277E.kicad_sch</source>
+    <date>Sat  7 Jan 10:30:43 2023</date>
+    <tool>Eeschema 6.0.10</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>Adapter DL5BCT-DIN-Standard &lt;--&gt; TRX MIC 4-pol</title>
+        <company>Peter Cornelius DL5BCT / peter cornelius consulting</company>
+        <rev>1.0</rev>
+        <date>2023-01-07</date>
+        <source>DL5BCT-DIN-Adapter-Mic-4pol-Sommerkamp_FT-277E.kicad_sch</source>
+        <comment number="1" value="Adapter from/to DL5BCT DIN Standard to 4-pol TRX mike connector"/>
+        <comment number="2" value="Sommerkamp FT-277 E"/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="J1">
+      <value>DIN-5_180degree</value>
+      <datasheet>http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf</datasheet>
+      <libsource lib="Connector" part="DIN-5_180degree" description="5-pin DIN connector (5-pin DIN-5 stereo)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DL5BCT-DIN-Adapter-Mic-4pol-Sommerkamp_FT-277E.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2272e953-9a54-47b8-a2b5-620e9d30e3a1</tstamps>
+    </comp>
+    <comp ref="J2">
+      <value>Radio_Microphone-4-pol</value>
+      <datasheet>(TBD)</datasheet>
+      <libsource lib="DL5BCT-DIN-Standard" part="Radio_Microphone-4-pol" description="4-pin connector used in ham and professional radios to connect a microphone"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DL5BCT-DIN-Adapter-Mic-4pol-Sommerkamp_FT-277E.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>774aba88-46ed-476c-91d0-61f7507cc184</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector" part="DIN-5_180degree">
+      <description>5-pin DIN connector (5-pin DIN-5 stereo)</description>
+      <docs>http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf</docs>
+      <footprints>
+        <fp>DIN*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">DIN-5_180degree</field>
+        <field name="Datasheet">http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+        <pin num="3" name="" type="passive"/>
+        <pin num="4" name="" type="passive"/>
+        <pin num="5" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="DL5BCT-DIN-Standard" part="Radio_Microphone-4-pol">
+      <description>4-pin connector used in ham and professional radios to connect a microphone</description>
+      <docs>(TBD)</docs>
+      <footprints>
+        <fp>DIN*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Radio_Microphone-4-pol</field>
+        <field name="Datasheet">(TBD)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+        <pin num="3" name="" type="passive"/>
+        <pin num="4" name="" type="passive"/>
+        <pin num="Enclosure" name="" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector">
+      <uri>/usr/local/share/kicad/symbols//Connector.kicad_sym</uri>
+    </library>
+    <library logical="DL5BCT-DIN-Standard">
+      <uri>/usr/home/pcc/src/Hardware/DL5BCT-DIN-Standard/DL5BCT-DIN-Adapter-Mic-4pol-Sommerkamp_FT-277E/../DL5BCT-DIN-Standard.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/RX_DATA_SPKR">
+      <node ref="J1" pin="1" pintype="passive"/>
+      <node ref="J2" pin="4" pintype="passive"/>
+    </net>
+    <net code="2" name="/TX_DATA_MIC">
+      <node ref="J1" pin="3" pintype="passive"/>
+      <node ref="J2" pin="2" pintype="passive"/>
+    </net>
+    <net code="3" name="/TX_PTT">
+      <node ref="J1" pin="5" pintype="passive"/>
+      <node ref="J2" pin="3" pintype="passive"/>
+    </net>
+    <net code="4" name="GND">
+      <node ref="J1" pin="2" pintype="passive"/>
+      <node ref="J2" pin="1" pintype="passive"/>
+    </net>
+    <net code="5" name="unconnected-(J1-Pad4)">
+      <node ref="J1" pin="4" pintype="passive+no_connect"/>
+    </net>
+    <net code="6" name="unconnected-(J2-PadEnclosure)">
+      <node ref="J2" pin="Enclosure" pintype="passive+no_connect"/>
+    </net>
+  </nets>
+</export>

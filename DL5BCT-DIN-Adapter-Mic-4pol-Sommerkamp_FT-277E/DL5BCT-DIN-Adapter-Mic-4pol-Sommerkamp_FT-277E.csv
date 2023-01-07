@@ -1,0 +1,19 @@
+"Source:","/usr/home/pcc/src/Hardware/DL5BCT-DIN-Standard/DL5BCT-DIN-Adapter-Mic-4pol-Sommerkamp_FT-277E/DL5BCT-DIN-Adapter-Mic-4pol-Sommerkamp_FT-277E.kicad_sch"
+"Date:","Sat  7 Jan 10:30:43 2023"
+"Tool:","Eeschema 6.0.10"
+"Generator:","/usr/local/share/kicad/plugins/bom_csv_grouped_by_value.py"
+"Component Count:","2"
+
+"Individual Components:"
+
+"Item","Qty","Reference(s)","Value","LibPart","Footprint","Datasheet"
+"","","J1","DIN-5_180degree","Connector:DIN-5_180degree","","http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf"
+"","","J2","Radio_Microphone-4-pol","DL5BCT-DIN-Standard:Radio_Microphone-4-pol","","(TBD)"
+
+
+
+"Collated Components:"
+
+"Item","Qty","Reference(s)","Value","LibPart","Footprint","Datasheet"
+"1","1","J1","DIN-5_180degree","Connector:DIN-5_180degree","","http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf"
+"2","1","J2","Radio_Microphone-4-pol","DL5BCT-DIN-Standard:Radio_Microphone-4-pol","","(TBD)"

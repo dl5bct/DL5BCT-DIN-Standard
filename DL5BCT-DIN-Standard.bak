@@ -1,6 +1,6 @@
 (kicad_symbol_lib (version 20211014) (generator kicad_symbol_editor)
   (symbol "Radio_Microphone-4-pol" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
-    (property "Reference" "J" (id 0) (at 12.954 8.89 0)
+    (property "Reference" "J" (id 0) (at 5.715 11.43 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "Radio_Microphone-4-pol" (id 1) (at 7.62 -2.54 0)
@@ -24,6 +24,14 @@
     (symbol "Radio_Microphone-4-pol_0_1"
       (polyline
         (pts
+          (xy 2.54 8.255)
+          (xy 5.08 6.35)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
           (xy 5.08 1.27)
           (xy 2.54 0)
         )
@@ -40,17 +48,7 @@
       )
       (polyline
         (pts
-          (xy 5.08 8.89)
-          (xy 5.08 8.128)
-          (xy 5.08 6.35)
-        )
-        (stroke (width 0) (type default) (color 0 0 0 0))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 10.16 8.89)
-          (xy 10.16 8.128)
+          (xy 12.7 8.255)
           (xy 10.16 6.35)
         )
         (stroke (width 0) (type default) (color 0 0 0 0))
@@ -100,11 +98,11 @@
         (name "~" (effects (font (size 1.27 1.27))))
         (number "1" (effects (font (size 1.27 1.27))))
       )
-      (pin passive line (at 5.08 11.43 270) (length 2.54)
+      (pin passive line (at 0 8.255 0) (length 2.54)
         (name "~" (effects (font (size 1.27 1.27))))
         (number "2" (effects (font (size 1.27 1.27))))
       )
-      (pin passive line (at 10.16 11.43 270) (length 2.54)
+      (pin passive line (at 15.24 8.255 180) (length 2.54)
         (name "~" (effects (font (size 1.27 1.27))))
         (number "3" (effects (font (size 1.27 1.27))))
       )
