@@ -6,12 +6,13 @@
 
   (title_block
     (title "DL5BCT DIN Standard Pinout")
-    (date "2023-01-07")
-    (rev "V1.0")
+    (date "2023-02-11")
+    (rev "V1.0.1")
     (company "Peter Cornelius DL5BCT / peter cornelius consulting")
-    (comment 1 "Radio acts as 'amplifier', computer acts as 'recorder'.")
-    (comment 2 "Derived from the DIN 41524 standard audio pinout:")
-    (comment 3 "Standard DIN connector pinout by DL5BCT")
+    (comment 1 "The connector at the radio side (mike 'plug') per default is female.")
+    (comment 2 "Radio acts as 'amplifier', computer acts as 'recorder'.")
+    (comment 3 "Derived from the DIN 41524 standard audio pinout:")
+    (comment 4 "Standard DIN connector pinout by DL5BCT")
   )
 
   (lib_symbols
@@ -178,7 +179,7 @@
     (uuid dfbc45cf-3bb2-4a37-8f98-0d16c800f197)
   )
 
-  (text "Colour Coding Conventions\nPin No.	Signal			Notes							Colour Set #1	Colour Set #2	My Colour\n1		RX_DATA_SPEAKER	RX (A)FSK signal				Yellow			Yellow\n2		GND				Signal Ground					Black			Clear/White\n3		TX_DATA_MIC		TX (A)FSK signal				Blue			Blue\n4		RX_TBD			(TBD/squelch/detector signal)	n/c				n/c\n5		~{TX_PTT}			'Push-to-talk', key up TX		Red				Red\nShield	Shield			Cable/connector shield			(Blank wire)	(Blank wire)"
+  (text "Colour Coding Conventions\nPin No.	Signal			Notes						Colour Set #1	Colour Set #2	My Colour\n1		RX_DATA_SPEAKER	RX (A)FSK signal			Yellow			Yellow\n2		GND				Signal Ground				Black			Clear/White\n3		TX_DATA_MIC		TX (A)FSK signal			Blue			Blue\n4		RX_SQUELCH		Squelch/detector signal		n/c				n/c\n5		~{TX_PTT}			'Push-to-talk', key up TX	Red				Red\nShield	Shield			Cable/connector shield		(Blank wire)	(Blank wire)"
     (at 17.78 97.79 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid b2eab1f6-bbba-4962-9d34-f14358c20150)
@@ -188,7 +189,7 @@
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 2eae82f4-297e-4de6-a65d-bdbd7d78ee2d)
   )
-  (label "RX_TBD{slash}RX_DETECT_SQUELCH" (at 93.98 43.18 180)
+  (label "RX_SQUELCH" (at 93.98 43.18 180)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 4033b672-ef44-4d31-90a3-0c46db4d6975)
   )
